@@ -1,3 +1,4 @@
+import "./styles/index.scss"
 const reactAdmin = {
   adminPanel: 2,
   React: "Dashboard"
@@ -11,3 +12,6 @@ const newAdmin = {
 
 console.log(reactAdmin)
 console.log(newAdmin)
+if (module.hot) {
+  module.hot.accept()
+}
