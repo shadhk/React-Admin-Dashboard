@@ -1,17 +1,8 @@
-import "./styles/index.scss"
-const reactAdmin = {
-  adminPanel: 2,
-  React: "Dashboard"
-}
+import { render } from "react-dom"
+import App from "./components/App.jsx"
 
-const newAdmin = {
-  ...reactAdmin,
-  tester: "Shad Khan",
-  Developer: "Shad Khan"
-}
+render(<App />, document.getElementById("root"))
 
-console.log(reactAdmin)
-console.log(newAdmin)
 if (module.hot) {
   module.hot.accept()
 }
