@@ -3,7 +3,7 @@ import { useState } from "react"
 const myPortfolio = {
   Name: "Shad Khan",
   Qualification: "B.Tech",
-  Address: "Bhadohi"
+  Address: "Bhadohi-221401"
 }
 
 const otherDetails = {
@@ -16,7 +16,7 @@ const otherDetails = {
 // console.log(otherDetails)
 
 const Something = () => {
-  const [recipe, setRecipe] = useState({})
+  const [recipe, setRecipe] = useState({ item: "No item available" })
   return (
     <>
       <h3>Current Recipe:</h3>
